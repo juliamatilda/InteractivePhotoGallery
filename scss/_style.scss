@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+}
