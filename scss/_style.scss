@@ -1,9 +1,18 @@
+@mixin center {
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+}
+
+
 * {
 	box-sizing: border-box;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding:0;
 }
 
 a {
@@ -11,10 +20,36 @@ a {
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
+  width: 100%;
 }
+
+.image-gallery {
+	width: 80%;
+}
+
+.search-input {
+	width: 100%;
+	padding: 50px;
+}
+
+.search-field {
+	width: 40%;
+	padding: 12px 0 12px 12px;
+	border-radius: 5px;
+
+}
+
+.thumb {
+
+
+	padding:22px;
+}
+
+.image-gallery,
+.search-input {
+	@include center;
+}
+
+/* =================================
+  Media Queries
+==================================== */
