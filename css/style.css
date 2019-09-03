@@ -17,22 +17,27 @@ a {
 }
 
 .image-gallery {
-  width: 80%;
+  width: 85%;
 }
 
 .search-input {
-  width: 100%;
   padding: 50px;
 }
 
 .search-field {
-  width: 40%;
   padding: 12px 0 12px 12px;
+  border: 2px solid #e5e5e5;
   border-radius: 5px;
 }
 
+.search-field::placeholder {
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+}
+
 .thumb {
-  padding: 22px;
+  padding: 28px;
 }
 
 .image-gallery,
@@ -45,5 +50,11 @@ a {
 /* =================================
   Media Queries
 ==================================== */
+@media (min-width: 614px) {
+  .search-field {
+    width: 50%;
+    max-width: 480px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
