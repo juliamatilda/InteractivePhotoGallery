@@ -32,19 +32,51 @@ a {
 
 .search-field::placeholder {
   opacity: 0.7;
-  letter-spacing: 0.05em;
   font-size: 0.9em;
+  letter-spacing: 0.05em;
 }
 
 .thumb {
   padding: 28px;
 }
 
+/*-----LIGHTBOX MODE-----*/
+.lg-backdrop.in {
+  opacity: 0.8;
+}
+
+.lg-sub-html, .lg-toolbar {
+  background-color: inherit;
+}
+
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  background: inherit;
+}
+
 .image-gallery,
-.search-input {
+.search-input,
+div.lg-sub-html {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+div.lg-sub-html {
+  width: 400px;
+  padding: 40px 40px;
+  line-height: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+.lg-sub-html p,
+.lg-sub-html h4 {
+  text-align: left;
+}
+
+.lg-sub-html h4 {
+  font-weight: 700;
+  position: relative;
+  top: 0;
 }
 
 /* =================================
@@ -54,6 +86,25 @@ a {
   .search-field {
     width: 50%;
     max-width: 480px;
+  }
+
+  img.lg-object.lg-image {
+    width: 700px !important;
+  }
+}
+@media (min-width: 992px) {
+  div.lg-sub-html {
+    width: 600px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+  }
+
+  .lg-sub-html p {
+    font-size: 13px;
+  }
+
+  .lg-sub-html h4 {
+    font-size: 14px;
   }
 }
 

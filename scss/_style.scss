@@ -4,6 +4,10 @@
  text-align: center;
 }
 
+@mixin space {
+  letter-spacing: .05em;
+}
+
 
 * {
 	box-sizing: border-box;
@@ -39,19 +43,53 @@ a {
 
 .search-field::placeholder {
   opacity:0.7;
-  letter-spacing: .05em;
   font-size: .9em;
+  @include space;
 }
 
 .thumb {
   padding:28px;
-  // width: 80%;
+}
+
+/*-----LIGHTBOX MODE-----*/
+.lg-backdrop.in {
+  opacity: 0.8;
+}
+
+.lg-sub-html, .lg-toolbar {
+  background-color: inherit;
+}
+
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  background: inherit;
 }
 
 .image-gallery,
-.search-input {
+.search-input,
+div.lg-sub-html {
 	@include center;
 }
+
+div.lg-sub-html  {
+  width: 400px;
+  padding: 40px 40px;
+  line-height: 1.1em;
+  @include space;
+}
+
+.lg-sub-html p,
+.lg-sub-html h4 {
+  text-align: left;
+}
+
+.lg-sub-html h4 {
+  font-weight: 700;
+  position: relative;
+  top:0;
+}
+
+
+
 
 
 /* =================================
@@ -61,9 +99,15 @@ a {
 @media (min-width: 614px) {
 
   .search-field {
-  	width:50%;
+  	width: 50%;
     max-width: 480px;
   }
+
+  img.lg-object.lg-image {
+    width: 700px!important;
+  }
+
+
 
 
 }
@@ -72,5 +116,18 @@ a {
 
 
 
+  div.lg-sub-html  {
+    width: 600px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+  }
+
+  .lg-sub-html p  {
+    font-size: 13px;
+  }
+
+  .lg-sub-html h4 {
+    font-size: 14px;
+  }
 
 }

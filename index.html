@@ -7,7 +7,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -15,92 +15,99 @@
 
         <!--Searchbox-->
         <div class="search-input">
-         <input class="search-field" type="text" name="search" placeholder="Search(16pt)" data-search>
+         <input class="search-field" id="filter" type="text" placeholder="Search(16pt)">
         </div>
 
-        <!--Captions-->
-        <div class="pic-text">
-
-         <div class="caption1" style="display:none">
-          <h4>Hay Bales</h4><p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
-         </div>
-         <div class="caption2" style="display:none">
-          <h4>Lake</h4><p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
-         </div>
-         <div class="caption3" style="display:none">
-          <h4>Canyon</h4><p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
-         </div>
-         <div class="caption4" style="display:none">
-          <h4>Iceberg</h4><p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
-         </div>
-         <div class="caption5" style="display:none">
-          <h4>Desert</h4><p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
-         </div>
-         <div class="caption6" style="display:none">
-          <h4>Fall</h4><p>Fall is coming, I love when the leaves on the trees start to change color.</p>
-         </div>
-         <div class="caption7" style="display:none">
-          <h4>Plantation</h4><p>I drove past this plantation yesterday, everything is so green!</p>
-         </div>
-         <div class="caption8" style="display:none">
-          <h4>Dunes</h4><p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
-         </div>
-         <div class="caption9" style="display:none">
-          <h4>Countryside Lane</h4><p>We enjoyed a quiet stroll down this countryside lane.</p>
-         </div>
-         <div class="caption10" style="display:none">
-          <h4>Sunset</h4><p>Sunset at the coast! The sky turned a lovely shade of orange.</p>
-         </div>
-         <div class="caption11" style="display:none">
-          <h4>Cave</h4><p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
-         </div>
-         <div class="caption12" style="display:none">
-          <h4>Bluebells</h4><p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
-         </div>
-       </div>
-
-         <!--Images-->
-         <div class="image-gallery" id="aniimated-thumbnials">
+        <!--Images-->
+        <div class="image-gallery">
 
           <a href="images/01.jpg" data-sub-html=".caption1">
-            <img src="images/thumbnails/01.jpg" class="thumb"/>
+            <img src="images/thumbnails/01.jpg" class="thumb" alt="hay bales"/>
+            <div class="caption1" style="display:none">
+             <h4>Hay Bales</h4><p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
+            </div>
           </a>
+
           <a href="images/02.jpg" data-sub-html=".caption2">
-            <img src="images/thumbnails/02.jpg" class="thumb"/>
+            <img src="images/thumbnails/02.jpg" class="thumb" alt="lake"/>
+            <div class="caption2" style="display:none">
+             <h4>Lake</h4><p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
+            </div>
           </a>
+
           <a href="images/03.jpg" data-sub-html=".caption3">
             <img src="images/thumbnails/03.jpg" class="thumb"/>
+            <div class="caption3" style="display:none" alt="canyon">
+             <h4>Canyon</h4><p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
+            </div>
           </a>
-          <a href="images/04.jpg" data-sub-html=".caption4">
-            <img src="images/thumbnails/04.jpg" class="thumb"/>
-          </a>
-          <a href="images/05.jpg" data-sub-html=".caption5">
-            <img src="images/thumbnails/05.jpg" class="thumb"/>
-          </a>
-          <a href="images/06.jpg" data-sub-html=".caption6">
-            <img src="images/thumbnails/06.jpg" class="thumb"/>
-          </a>
-          <a href="images/07.jpg" data-sub-html=".caption7">
-            <img src="images/thumbnails/07.jpg" class="thumb"/>
-          </a>
-          <a href="images/08.jpg" data-sub-html=".caption8">
-            <img src="images/thumbnails/08.jpg" class="thumb"/>
-          </a>
-          <a href="images/09.jpg" data-sub-html=".caption9">
-            <img src="images/thumbnails/09.jpg" class="thumb"/>
-          </a>
-          <a href="images/10.jpg" data-sub-html=".caption10">
-            <img src="images/thumbnails/10.jpg" class="thumb"/>
-          </a>
-          <a href="images/11.jpg" data-sub-html=".caption11">
-            <img src="images/thumbnails/11.jpg" class="thumb"/>
-          </a>
-          <a href="images/12.jpg" data-sub-html=".caption12">
-            <img src="images/thumbnails/12.jpg" class="thumb"/>
-          </a>
-         </div>
 
+          <a href="images/04.jpg" data-sub-html=".caption4">
+            <img src="images/thumbnails/04.jpg" class="thumb" alt="iceberg"/>
+            <div class="caption4" style="display:none">
+             <h4>Iceberg</h4><p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
+            </div>
+          </a>
+
+          <a href="images/05.jpg" data-sub-html=".caption5">
+            <img src="images/thumbnails/05.jpg" class="thumb" alt="desert"/>
+            <div class="caption5" style="display:none">
+             <h4>Desert</h4><p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
+            </div>
+          </a>
+
+
+          <a href="images/06.jpg" data-sub-html=".caption6">
+            <img src="images/thumbnails/06.jpg" class="thumb" alt="fall"/>
+            <div class="caption6" style="display:none">
+             <h4>Fall</h4><p>Fall is coming, I love when the leaves on the trees start to change color.</p>
+            </div>
+          </a>
+
+          <a href="images/07.jpg" data-sub-html=".caption7">
+            <img src="images/thumbnails/07.jpg" class="thumb" alt="plantation"/>
+            <div class="caption7" style="display:none">
+             <h4>Plantation</h4><p>I drove past this plantation yesterday, everything is so green!</p>
+            </div>
+          </a>
+
+          <a href="images/08.jpg" data-sub-html=".caption8">
+            <img src="images/thumbnails/08.jpg" class="thumb" alt="dunes"/>
+            <div class="caption8" style="display:none">
+             <h4>Dunes</h4><p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
+            </div>
+          </a>
+
+          <a href="images/09.jpg" data-sub-html=".caption9">
+            <img src="images/thumbnails/09.jpg" class="thumb" alt="countryside lane"/>
+            <div class="caption9" style="display:none">
+             <h4>Countryside Lane</h4><p>We enjoyed a quiet stroll down this countryside lane.</p>
+            </div>
+          </a>
+
+          <a href="images/10.jpg" data-sub-html=".caption10">
+            <img src="images/thumbnails/10.jpg" class="thumb" alt="sunset"/>
+            <div class="caption10" style="display:none">
+             <h4>Sunset</h4><p>Sunset at the coast! The sky turned a lovely shade of orange.</p>
+            </div>
+          </a>
+
+          <a href="images/11.jpg" data-sub-html=".caption11">
+            <img src="images/thumbnails/11.jpg" class="thumb" alt="cave"/>
+            <div class="caption11" style="display:none">
+             <h4>Cave</h4><p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
+            </div>
+          </a>
+
+          <a href="images/12.jpg" data-sub-html=".caption12">
+            <img src="images/thumbnails/12.jpg" class="thumb" alt="bluebells"/>
+            <div class="caption12" style="display:none">
+             <h4>Bluebells</h4><p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
+            </div>
+          </a>
         </div>
+
+      </div>
 
     <!--JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
