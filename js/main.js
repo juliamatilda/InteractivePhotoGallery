@@ -2,8 +2,7 @@
 
 $('.image-gallery').lightGallery({
   download:false,
-  counter:false,
-  width:'90%'
+  counter:false
 });
 
 
@@ -14,15 +13,21 @@ $('.image-gallery').lightGallery({
 
 
 
-//Searchfield//
+//Searchfield based on the text inside the caption paragraphs//
 let $search = $('#filter');
-let $images = $('img');
+let $link = $('a');
 
 $search.on('keyup', function(){
-  let $value = $search.val().toLowerCase();
-  $images.show();
-  if($value !== ''){
-    $images.not('[alt*="' + $value + '"]').hide();
-  }
+  const $value = $search.val().toLowerCase();
 
+  $link.each(function(){
+    const $currentLink = $(this);
+    const $currentP =  $currentLink.find('p');
+
+    if($currentP.text().toLowerCase().indexOf($value) === -1){
+      $currentLink.hide();
+    } else {
+      $currentLink.show();
+    }
+ })
 });

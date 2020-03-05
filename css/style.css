@@ -4,6 +4,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -21,15 +22,18 @@ a {
 }
 
 .search-input {
-  padding: 50px;
+  margin-top: 30px;
+  padding-bottom: 10px;
 }
 
 .search-field {
-  padding: 12px 0 12px 12px;
+  padding: 12px 0 13px 12px;
   border: 2px solid #e5e5e5;
   border-radius: 5px;
 }
-
+.search-field:focus {
+  outline: none;
+}
 .search-field::placeholder {
   opacity: 0.7;
   font-size: 0.9em;
@@ -37,7 +41,7 @@ a {
 }
 
 .thumb {
-  padding: 28px;
+  padding: 25px;
 }
 
 /*-----LIGHTBOX MODE-----*/
@@ -45,11 +49,13 @@ a {
   opacity: 0.8;
 }
 
-.lg-sub-html, .lg-toolbar {
+.lg-sub-html,
+.lg-toolbar {
   background-color: inherit;
 }
 
-.lg-actions .lg-next, .lg-actions .lg-prev {
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
   background: inherit;
 }
 
@@ -74,9 +80,7 @@ div.lg-sub-html {
 }
 
 .lg-sub-html h4 {
-  font-weight: 700;
-  position: relative;
-  top: 0;
+  font-weight: 400;
 }
 
 /* =================================
